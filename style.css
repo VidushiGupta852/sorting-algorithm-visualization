@@ -1,0 +1,126 @@
+/* General styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 20px 0;
+  color: #333;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+/* Array container */
+#array-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 400px;
+  margin: 20px auto;
+  width: 80%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+/* Bar styling */
+.bar {
+  margin: 0 2px;
+  background-color: #3498db;
+  width: 20px;
+  transition: height 0.3s ease, background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+/* Controls styling */
+.controls {
+  margin: 20px;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Speed slider */
+input[type="range"] {
+  width: 200px;
+  margin-left: 10px;
+}
+
+label {
+  font-size: 1.2em;
+  margin-right: 5px;
+  color: #333;
+}
+
+/* Bar colors during sorting */
+.bar.red {
+  background-color: red;
+}
+
+.bar.green {
+  background-color: #27ae60;
+}
+
+.bar.yellow {
+  background-color: #f1c40f;
+}
+
+.bar.teal {
+  background-color: #1abc9c;
+}
+
+/* Information panel */
+.info-panel {
+  background-color: #fafafa;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+  font-size: 1.1em;
+  color: #333;
+  max-width: 80%;
+  text-align: left;
+  display: inline-block;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #f4f4f9;
+}
+
+.dark-mode .bar {
+  background-color: #bb86fc;
+}
+
+.dark-mode button {
+  background-color: #6200ea;
+  color: #fff;
+}
+
+.dark-mode-heading {
+  color: white;
+}

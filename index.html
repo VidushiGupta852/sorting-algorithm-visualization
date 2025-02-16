@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorting Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Sorting Algorithm Visualizer</h1>
+
+  <!-- Container for the array bars -->
+  <div id="array-container"></div>
+
+  <!-- Buttons for different algorithms -->
+  <div class="controls">
+    <button onclick="bubbleSort(); displayAlgorithmInfo('Bubble Sort')">Bubble Sort</button>
+    <button onclick="mergeSort(0, array.length - 1); displayAlgorithmInfo('Merge Sort')">Merge Sort</button>
+    <button onclick="quickSort(0, array.length - 1); displayAlgorithmInfo('Quick Sort')">Quick Sort</button>
+    <button onclick="selectionSort(); displayAlgorithmInfo('Selection Sort')">Selection Sort</button>
+    <button onclick="generateArray(); displayAlgorithmInfo('')">Generate New Array</button>
+
+    <!-- Speed control slider -->
+    <label for="speedRange">Speed:</label>
+    <input type="range" id="speedRange" min="50" max="1000" value="300" oninput="setSpeed(1000 - this.value)">
+  </div>
+
+  <!-- Information panel for the selected algorithm -->
+  <div id="info-panel" class="info-panel"></div>
+
+  <button onclick="toggleTheme()">Toggle Dark Mode</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
